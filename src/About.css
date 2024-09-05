@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    background: linear-gradient(135deg, #c3fde6 0%, #f0f0f5 100%);
+    overflow-x: hidden;
+  }
+  
+  /* Blob Styles (If you want to use them) */
+  .blob {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.8;
+    z-index: 1;
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  /* About Page Styles */
+  .about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 50px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .content {
+    z-index: 2;
+    position: relative;
+  }
+  
+  .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .profile-picture {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #333;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  a {
+    color: #6a1b9a;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  a:hover {
+    color: #333;
+  }
+  
+  a:visited {
+    color: #333;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    p {
+      font-size: 1rem;
+    }
+  }
+  .profile-picture {
+    width: 150px;
+    height: auto;
+    border-radius: 50%; /* For circular image */
+    margin-bottom: 20px;
+  }
